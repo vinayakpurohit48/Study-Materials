@@ -1,0 +1,37 @@
+- Resource Allocation
+- Multitasking
+- Interface between the user and the computer
+- Managing the input/output devices
+- Manages the memory
+- Manages the system files
+- Provides Security
+- Acts as an Interface
+
+1). Resource Allocation: Since more than one program runs simultaneously on the system
+and uses the CPU and memory, we need an operating system to manage the resource 
+distribution among the various processes.
+
+2). Multitasking : The OS helps to run more than one application at a time on the computer.
+It plays an important role while multitasking. Since it manages memory and other devices
+during multitasking. Therefore, it provides smooth multitasking on the system.
+
+3). Interface between the user and the computer : An OS provides a very easy way to interact
+with the computer. It provides different features and GUI so that we can easily work on a computer.
+We have to interact just by clicking the mouse or through the keyboard. Thus, we can say that an OS
+makes working very easy and efficient.
+
+4). Managing the input/output devices : The OS helps to operate the different input/output devices.
+The OS decides which program or process can use which device. Moreover, it decides the time for usage.
+In addition to this, it controls the allocation and deallocation of devices.
+
+5). Manages the memory : It helps in managing the main memory of the computer. Moreover, It allocates
+and deallocates memory to all the applications/tasks.
+
+6). Manages the system files : It helps to manage files on the system. As we know, all the data on the system
+is in the form of files. It makes interaction with the files easy.
+
+7). Provides Security : It keeps the system and applications safe through authorization. Thus, the OS provides
+security to the system.
+
+8). Acts as an Interface : It is an interface between computer hardware and software. Moreover, it is an interface
+between the user and the computer.

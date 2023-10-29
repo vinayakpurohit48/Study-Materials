@@ -1,0 +1,27 @@
+Testing:-
+    Testing is the process of evaluating a system or its component(s) with     the intent to find whether it satisfies the specified requirements or      not.
+
+Testing pincipal: 
+
+	- Testing shows the presence of defects
+	- Exhaustive Testing is not possible
+	- Early Testing
+	- Defect Clustering
+	- Pesticide Paradox
+	- Testing is context-dependent
+	- Absence of errors fallacy
+
+Testing Types: 
+
+	- WhiteBox 
+	- BlackBox
+	- Unit
+	- Integration testing
+	- System testing
+
+Types of changeover:
+
+	- Parallel System Method
+	- Dual System Method or Phase-in Method
+	- Direct Method
+	- Pilot Approach

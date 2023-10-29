@@ -1,0 +1,61 @@
+List : 
+======
+- mutable,ordered, Duplicates, Heterogeneous(contain anydata type)
+
+List indexing and slicing
+sing the slice operator []
+list_varible[start:stop:step]
+1. The start denotes the starting index position of the list.
+2. The stop denotes the last index position of the list.
+3. The step is used to skip the nth element within a start
+
+Iterating a List : Use for loop eg. for i in list
+Check if Item Exists : if "apple" in list
+Add/Change List Elements using = operator
+range() to a list  : eg. My_list = [*range(10, 21, 1)]
+Note: *(argument-unpacking operator)
+
+List methods (append, clear, copy, count, index, insert, pop, remove, 
+reverse, sort) :
+=============
+append :  used to add (only one) element to the list
+eg. list.append(item)  eg. ls.append(input("Enter the item:"))
+
+clear :  removes all items
+eg. list.clear()
+
+copy : shallow copy of the list
+problem : if you modify new_list, old_list is also modified
+eg. new_list = list.copy()
+
+count : returns the number of times the specified element appears in the 
+list
+eg. list.count(element)  eg. count = vowels.count('i')
+
+index : returns the index of the specified element in the list
+- first occurrence of the matching element
+eg. list.index(element, (op)start, (op)end)
+index = vowels.index(‘I’)
+
+insert : inserts an element to the list at the specified index
+eg. list.insert(index, element)
+vowel.insert(3, 'o')
+
+pop : removes the item at the given index from the list and returns the 
+removed item
+eg. list.pop(index)  eg.  return_value = languages.pop(3)
+
+remove : remove the first matching element from the list
+eg. list.remove(element)
+
+sort : sorts the elements of a given list in a specific ascending or descending 
+order
+eg. list.sort() assending
+eg. list.sort(reverse=True) descending
+
+reverse :  reverses the elements of the list
+eg. list.reverse()
+
+extend : adds all the elements of an iterable (list, tuple, string etc.) to the 
+end of the list
+eg. list1.extend(iterable)

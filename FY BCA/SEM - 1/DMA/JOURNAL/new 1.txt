@@ -1,0 +1,116 @@
+SQL> create table Employee(
+  2  Emp_ID number(3) primary key,
+  3  Emp_Name varchar(10) not null,
+  4  Department varchar(5) not null,
+  5  constraint dep check (department like 'E-___'),
+  6  contact_NO number(10) not null,
+  7  Email_ID varchar(25) not null,
+  8  Emp_Head_ID number(3) not null);
+
+Table created.
+
+SQL> insert into Employee values(001,'prakash','E-101',9351477506,'prakash12@yahoo.com',111);
+
+1 row created.
+
+SQL> insert into Employee values(002,'mohan','E-102',7568835281,'mohanku53@yahoo.com',112);
+
+1 row created.
+
+SQL> insert into Employee values(003,'pritam','E-103',9929534109,'pritampur99@gmail.com',132);
+
+1 row created.
+
+SQL> insert into Employee values(004,'ishika','E-104',9316452922,'ishika24@gmail.com',222);
+
+1 row created.
+
+SQL> insert into Employee values(005,'kavita','E-105',9029332521,'kavita54@yahoo.com',235);
+
+1 row created.
+
+SQL> select * from Employee;
+
+    EMP_ID EMP_NAME   DEPAR CONTACT_NO EMAIL_ID                  EMP_HEAD_ID
+---------- ---------- ----- ---------- ------------------------- -----------
+         1 prakash    E-101 9351477506 prakash12@yahoo.com               111
+         2 mohan      E-102 7568835281 mohanku53@yahoo.com               112
+         3 pritam     E-103 9929534109 pritampur99@gmail.com             132
+         4 ishika     E-104 9316452922 ishika24@gmail.com                222
+         5 kavita     E-105 9029332521 kavita54@yahoo.com                235
+
+SQL> select * from Employee
+  2  where Emp_Name like 'p%';
+
+    EMP_ID EMP_NAME   DEPAR CONTACT_NO EMAIL_ID                  EMP_HEAD_ID
+---------- ---------- ----- ---------- ------------------------- -----------
+         1 prakash    E-101 9351477506 prakash12@yahoo.com               111
+         3 pritam     E-103 9929534109 pritampur99@gmail.com             132
+
+SQL> select * from Employee
+  2 where Email_ID like'%gmail%';
+
+    EMP_ID EMP_NAME   DEPAR CONTACT_NO EMAIL_ID                  EMP_HEAD_ID
+---------- ---------- ----- ---------- ------------------------- -----------
+         3 pritam     E-103 9929534109 pritampur99@gmail.com             132
+         4 ishika     E-104 9316452922 ishika24@gmail.com                222
+
+
+SQL> select * from Employee
+  2  where Department = 'E-104'or Department = 'E-102';
+
+    EMP_ID EMP_NAME   DEPAR CONTACT_NO EMAIL_ID                  EMP_HEAD_ID
+---------- ---------- ----- ---------- ------------------------- -----------
+         2 mohan      E-102 7568835281 mohanku53@yahoo.com               112
+         4 ishika     E-104 9316452922 ishika24@gmail.com                222
+
+SQL> select * from Employee
+  2  where Emp_Name like '__h%';
+
+    EMP_ID EMP_NAME   DEPAR CONTACT_NO EMAIL_ID                  EMP_HEAD_ID
+---------- ---------- ----- ---------- ------------------------- -----------
+         2 mohan      E-102 7568835281 mohanku53@yahoo.com               111
+         4 ishika     E-104 9316452922 ishika24@gmail.com                222
+
+SQL> update employee set department = 'E-106'
+  2  where Emp_Name = 'kavita';
+
+1 row updated.
+
+SQL> select * from Employee;
+
+    EMP_ID EMP_NAME   DEPAR CONTACT_NO EMAIL_ID                  EMP_HEAD_ID
+---------- ---------- ----- ---------- ------------------------- -----------
+         1 prakash    E-101 9351477506 prakash12@yahoo.com               111
+         2 mohan      E-102 7568835281 mohanku53@yahoo.com               112
+         3 pritam     E-103 9929534109 pritampur99@gmail.com             132
+         4 ishika     E-104 9316452922 ishika24@gmail.com                222
+         5 kavita     E-106 9029332521 kavita54@yahoo.com                235
+
+SQL> alter table employee drop column Emp_Head_Id;
+
+Table altered.
+
+SQL> select * from Employee;
+
+    EMP_ID EMP_NAME   DEPAR CONTACT_NO EMAIL_ID
+---------- ---------- ----- ---------- -------------------------
+         1 prakash    E-101 9351477506 prakash12@yahoo.com
+         2 mohan      E-102 7568835281 mohanku53@yahoo.com
+         3 pritam     E-103 9929534109 pritampur99@gmail.com
+         4 ishika     E-104 9316452922 ishika24@gmail.com
+         5 kavita     E-106 9029332521 kavita54@yahoo.com
+
+SQL> alter table employee add Emp_Salary number(7);
+
+Table altered.
+
+SQL> select * from Employee;
+
+    EMP_ID EMP_NAME   DEPAR CONTACT_NO EMAIL_ID                  EMP_SALARY
+---------- ---------- ----- ---------- ------------------------- ----------
+         1 prakash    E-101 9351477506 prakash12@yahoo.com
+         2 mohan      E-102 7568835281 mohanku53@yahoo.com
+         3 pritam     E-103 9929534109 pritampur99@gmail.com
+         4 ishika     E-104 9316452922 ishika24@gmail.com
+         5 kavita     E-106 9029332521 kavita54@yahoo.com

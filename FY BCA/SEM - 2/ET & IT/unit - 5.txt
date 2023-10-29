@@ -1,0 +1,54 @@
+Production planning Application software system : 
+============================================
+
+Production planning application software systems are computer programs designed to assist
+businesses in planning and managing their manufacturing operations. These systems use a
+variety of tools and techniques to optimize the production process, minimize waste, and
+maximize efficiency.
+
+Typically, production planning software includes a variety of features such as inventory
+management, resource planning, scheduling, and forecasting. The software may also
+include tools for tracking orders, managing suppliers, and analyzing production data to identify
+areas for improvement.
+
+One of the key benefits of production planning software is that it allows businesses to automate
+many of their production processes, reducing the need for manual labor and increasing efficiency.
+This can help to reduce costs, improve quality, and increase output, all of which can be important
+factors in maintaining a competitive edge in today's fast-paced business environment.
+
+Some common examples of production planning software systems include Enterprise Resource
+Planning (ERP) systems, Manufacturing Execution Systems (MES), and Advanced Planning and
+Scheduling (APS) systems. These systems can be customized to meet the specific needs of
+different businesses, and may be used in a variety of industries such as automotive, electronics,
+and aerospace.
+
+Overall, production planning application software systems are powerful tools that can help
+businesses to improve their manufacturing processes and achieve greater levels of efficiency
+and productivity.
+
+Accounting application software systems
+==================================
+Accounting application software systems are computer programs designed to help businesses
+manage their financial transactions, including recording, classifying, and reporting on financial
+data. These systems are used by businesses of all sizes, from small startups to large multinational
+corporations.
+
+Accounting software typically includes a variety of features, such as invoicing, accounts payable
+and receivable, payroll, financial reporting, and tax management. Some accounting software
+systems also offer additional features such as inventory management, budgeting, and forecasting.
+
+One of the key benefits of using accounting software is that it can help businesses to save time
+and reduce errors in financial record-keeping. Automation of accounting processes can also
+lead to improved accuracy, as well as reduced manual labor costs.
+
+Additionally, accounting software can help businesses to make more informed financial decisions
+ by providing real-time access to financial data, as well as insights into key financial metrics such
+as revenue, expenses, and cash flow.
+
+Common examples of accounting software systems include QuickBooks, Xero, and Sage. These
+systems can be customized to meet the specific needs of different businesses and may be used 
+in a variety of industries, including retail, healthcare, and professional services.
+
+Overall, accounting application software systems are essential tools that can help businesses
+manage their finances more effectively, improve their decision-making processes, and maintain
+accurate financial records.

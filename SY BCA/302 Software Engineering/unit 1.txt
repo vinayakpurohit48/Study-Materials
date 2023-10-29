@@ -1,0 +1,39 @@
+Software Engineering:
+ The systematic approach to the development, operations, maintenance
+and refinement of software.
+
+Characteristics of software: 
+	- Intangible (untouchable)
+	- Use Programs and data
+	- Malleability (easily updated)
+	- Functionality(specific functionality)
+	- Algorithmic
+	- UI
+	- Security
+	- Documentation
+	- Testing and quality Assurance
+	- Licensing and Intellectual Property
+	- Lifecycle(design,development,testing deployment,maintenances)
+	- User-Driven (developed based on user needs and feedback)
+	- developed not manufactured
+
+Types of Software: 
+ 	- System Software
+	- Application Software
+	- Embedded Software
+	- Web based Software
+	- Artificial Intelligence Software
+	- Business Software
+	- Real Time Software
+		- Hard real time
+		- Soft real time
+
+Software Engineering – A Generic View
+	
+ 	- Definition Phase
+	- Development Phase
+	- Support Phase
+		- Correction
+		- Adaptation
+		- Enhancement
+		- Prevention

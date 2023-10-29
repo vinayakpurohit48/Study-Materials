@@ -1,0 +1,76 @@
+Production planning Application software system:
+================================================
+ 
+		- Capacity Planning
+		- Material Requirements Planning (MRP)
+		- Inventory Management
+		- Scheduling
+		- Resource Planning
+		- Reporting and Analytics
+		- Quality Control
+		- Cost savings
+
+Accounting Application software system :
+===================================
+
+		- Invoicing
+		- Accounts Payable and Receivable
+		- Financial Reporting
+		- Budgeting
+		- Bank Reconciliation 
+		- Cost savings
+
+Inventory Applications:
+===================
+		
+		- Inventory Tracking
+		- Order Management
+		- Purchasing Management
+		- Reporting and Analytics
+		- Automated inventory management
+		- Multi-location support
+		- Mobile accessibility
+		- User permissions and security
+		- Cost savings
+
+fundamentals of ERP : 
+===================
+
+		- Integration
+		- Automation
+		- Data Management
+		- Scalability
+		- Customization
+
+ importance of ERP :
+==================
+
+		- Improved Efficiency
+		- Enhanced Collaboration
+		- Improved Customer Service
+		- Better Decision Making
+		- Improved Compliance
+		- Cost savings
+		- 
+
+feature of ETL concepts :
+
+		- Automation
+		- Scalability
+		- Data Quality 
+		- Extraction, Transformation, and Loading
+		- Error handling
+		- Metadata management
+		- Performance optimization
+		- Cost savings
+		- Customer satisfaction
+
+Applications of Data Science:
+========================
+
+		- Business Analytics
+		- Healthcare
+		- Finance
+		- Social Media Analysis
+		- Manufacturing
+		- Transportation

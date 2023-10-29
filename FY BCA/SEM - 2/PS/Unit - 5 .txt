@@ -1,0 +1,97 @@
+5.1 Python Collections:
+The collection Module in Python provides different types of containers. A Container is an 
+object that is used to store different objects and provide a way to access the contained 
+objects and iterate over them. Some of the built-in containers are Tuple, List, Dictionary, 
+etc
+
+1) Tuples():
+===========
+- Tuple items are ordered, unchangeable, and allow duplicate values.
+- allow indexing Using index [] operator
+- A tuple can be written as the collection of comma-separated (,) values enclosed with the 
+  small () brackets
+- A tuple can have any number of items and they may be of different types (integer, float, 
+ list, string, etc.)
+ 
+-->  Creating a tuple with single element is slightly different. We will need to put comma after 
+        the element to declare the tuple.
+	eg. tup1 = ("JavaTpoint") #<class 'str'>
+	       tup2 = ("JavaTpoint",)  #<class 'tuple'>
+
+-->   tuples are immutable but if the element is itself a mutable data type like a list, its 
+     nested items can be changed
+
+-->  We can use concatenation (+) operator to combine two tuples
+  eg. print((1, 2, 3) + (4, 5, 6))  # (1, 2, 3, 4, 5, 6)
+
+-->  We can also repeat the elements in a tuple for a given number of times using the *
+     operator.Both + and * operations result in a new tuple.
+  eg. print(("Repeat",) * 3)  # ('Repeat', 'Repeat', 'Repeat')
+
+-->  we cannot delete or remove items from a tuple. Deleting a tuple is possible using the keyword del.
+
+-->  The tuple has the fixed length.
+
+Tuple Methods:
+===============
+-->  Methods that add items or remove items are not available with tuple
+      - Tuple() Constructor eg. thistuple = tuple(("apple", "banana", "cherry"))
+      - Tuple Membership Test   eg. print('a' in my_tuple) # ans in True or False
+      - Iterating Through a Tuple  eg. for name in ('John', 'Kate'):
+			      print("Hello", name)
+      - Count(value) eg. print(my_tuple.count('p'))
+      - index(value)  eg. print(my_tuple.index('l'))
+=============================================================================
+=============================================================================
+2). Sets{}:
+=========
+--> set items are unordered, unique, mutable.
+--> all the items (elements) inside curly braces {}, separated by 
+      comma
+--> eg. my_set = {1.0, "Hello", (1, 2, 3)}
+--> Empty curly braces {} will make an empty dictionary in Python
+--> set() function use to make empty set.
+--> Nested set can't be possible
+o --> We can add a single element using the add() method, and multiple elements using the 
+          update() method
+
+METHODS: 
+	-> set()  : for make empty set
+	-> add()  : Add single value.
+	-> update()  Note : in this string store in char use list for string
+	-> discard()   leaves a set unchanged if the element is not present in the set
+	-> remove()  raise an error  eg. my_set.remove(2) 
+	-> pop() : Remove Random element  eg. my_set.pop()
+	-> clear() : Remove all the items from a set  eg. my_set.clear()
+ 	-> copy() : returns a shallow copy of the set
+		Note : here ' = ' operator also use but updating problem new update 
+			than old also update
+	-> union()  eg. print(A.union(B)) 
+	-> intersection()   eg. print(A.intersection(B))
+
+Union And Intersection : 
+=====================
+ --> Union is performed using | operator and union() method.     eg. print(A | B)
+-->  Intersection is performed using & operator and intersection() method  eg. print(A & B)
+
+3). Dictionary  { } :
+=============
+- ordered, mutable( the keys are the immutable) 
+- used to store the data in a key-value pair format
+- Keys must be a single element
+- Value can be any type such as list, tuple, integer, etc
+- Dictionaries cannot have two items with the same key
+o syntax : Dict = {key1: value1, key2: value2}
+
+ex. print("Name : %s" %Employee["Name"])
+
+NumPy : 
+========
+attributes of a NumPy: 
+
+Ndim: displays the dimension of the array
+Shape: returns a tuple of integers indicating the size of the array
+Size: returns the total number of elements in the NumPy array
+Dtype: returns the type of elements in the array, i.e., int64, character
+Itemsize: returns the size in bytes of each item
+Reshape: Reshapes the NumPy array

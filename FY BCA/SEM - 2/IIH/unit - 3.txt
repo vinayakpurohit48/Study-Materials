@@ -1,0 +1,21 @@
+Internet Security
+================
+   Internet security refers to securing communication over the internet. It includes
+specific security protocols such as:
+                         Internet Security Protocol (IPSec)
+                         Secure Socket Layer (SSL)
+
+Internet Security Protocol (IPSec)
+============================
+	- designed by Internet Engineering Task Force (IETF)
+	- security at network level
+	- authenticated and confidential packets for IP layer
+
+Secure Socket Layer (SSL)
+=====================
+	- developed by Netscape Communications Corporation
+	- provides security at transport layer
+	- security  : 
+		- Privacy
+		- Integrity
+		-  Authentication

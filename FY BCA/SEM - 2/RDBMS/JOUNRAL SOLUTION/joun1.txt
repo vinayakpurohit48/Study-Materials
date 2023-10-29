@@ -1,0 +1,143 @@
+ create table dept(
+  2  deptno number primary key,
+  3  dname varchar (10),
+  4  city varchar (10));
+  
+SQL> create table emp (
+  2  empno number primary key ,
+  3  ename varchar(10),
+  4  job_title varchar(15),
+  5  hiredate date,
+  6  salary number(6),
+  7  deptno number(3),
+  8  constraint a foreign key (deptno) references dept (deptno));
+
+SQL> INSERT INTO Dept VALUES(101, 'Admin', 'VAPI');
+
+SQL> INSERT INTO Dept VALUES(102, 'IT', 'Mumbai');
+
+SQL> INSERT INTO Dept VALUES(103, 'Finance', 'Delhi');
+
+SQL> INSERT into Emp values (1, 'jaimin', 'Manager', '16-jan-2020', 50000, 101);
+
+SQL> insert into Emp values(2, 'abhinav', 'Developer', '20-feb-2016', 40000, 102);
+
+SQL> insert into Emp values(3, 'vishal', 'Administrator', '11-aug-2020', 35000,103);
+
+SQL> insert into Emp values(4, 'aakash', 'Tester', '19-june-2017', 9000, 102);
+
+SQL> insert into Emp values(5, 'suresh', 'Analyst', '18-jul-2019', 45000, 101);
+
+(3) WRITE A QUERY TO FETCH UNIQUE VALUES OF EMP.
+
+SQL> SELECT DISTINCT * FROM Emp;
+
+     EMPNO ENAME      JOB_TITLE       HIREDATE      SALARY     DEPTNO
+---------- ---------- --------------- --------- ---------- ----------
+         1 jaimin     Manager         16-JAN-20      50000        101
+         2 abhinav    Developer       20-FEB-16      40000        102
+         3 vishal     Administrator   11-AUG-20      35000        103
+         4 aakash     Tester          19-JUN-17       9000        102
+         5 suresh     Analyst         18-JUL-19      45000        101
+
+(4) Write a Query to print all employee details in ascending order of employee‟s names.
+
+
+SQL> select * from emp order by ename;
+
+     EMPNO ENAME      JOB_TITLE       HIREDATE      SALARY     DEPTNO
+---------- ---------- --------------- --------- ---------- ----------
+         4 aakash     Tester          19-JUN-17       9000        102
+         2 abhinav    Developer       20-FEB-16      40000        102
+         1 jaimin     Manager         16-JAN-20      50000        101
+         5 suresh     Analyst         18-JUL-19      45000        101
+         3 vishal     Administrator   11-AUG-20      35000        103
+
+(5) Write a Query to print details of employees whose First_Name ends with „n‟ and 
+contains six alphabets.
+
+SQL> select * from emp
+  2  where ename like '_____n';
+
+     EMPNO ENAME      JOB_TITLE       HIREDATE      SALARY     DEPTNO
+---------- ---------- --------------- --------- ---------- ----------
+         1 jaimin     Manager         16-JAN-20      50000        101
+
+(6) Write a Query to count number of employees working in department „Admin‟.
+
+SQL> SELECT COUNT(*) FROM Emp
+  2  WHERE deptno = (SELECT deptno FROM Dept WHERE dname = 'Admin');
+
+  COUNT(*)
+----------
+         2
+		 
+(7) Write a Query to count number of workers for each department in descending order.
+		 
+SQL> select d.dname , count(e.deptno) from emp e , dept d
+  2  where d.deptno = e.deptno
+  3  group by d.dname
+  4  order by d.dname desc;
+
+DNAME      COUNT(E.DEPTNO)
+----------       ---------------
+IT                       2
+Finance                   1
+Admin                    2
+
+(8) Find the Employees who are not working in “HR”,”IT” and “FINANCE” department.
+
+SQL> select ename, dname from emp
+  2  inner join dept on emp.deptno = dept.deptno
+  3  where dname not in ('hr','IT','Finance');
+  
+ENAME      DNAME
+---------- ----------
+jaimin     Admin
+suresh     Admin
+
+(9) Display the name of employee and department who get salary more than 10000.
+
+SQL> select ename, dname from emp
+  2  inner join dept on emp.deptno = dept.deptno
+  3  where salary > 10000;
+
+ENAME      DNAME
+---------- ----------
+jaimin     Admin
+abhinav    IT
+vishal     Finance
+suresh     Admin
+
+(10) Display the name of employees who are getting maximum salary in each department.
+
+SQL> select ename, dname from emp
+  2  inner join dept on emp.deptno = dept.deptno
+  3  where salary = (select max(salary) from emp where deptno = dept.deptno);
+
+ENAME      DNAME
+---------- ----------
+jaimin     Admin
+abhinav    IT
+vishal     Finance 
+
+(11) Find the name of employees who work in VAPI city
+
+SQL> select ename from emp
+  2  where deptno = (select deptno from dept where city = 'VAPI');
+
+ENAME
+----------
+jaimin
+suresh
+
+(12) Display the name of employee who are working in “IT” department and have more than 3 years 
+experience.
+
+SQL> select ename , dname from emp , dept
+  2  where dname = 'IT' and hiredate < '07/feb/2020' and emp.deptno = dept.deptno ;
+
+ENAME      DNAME
+---------- ----------
+abhinav    IT
+aakash     IT

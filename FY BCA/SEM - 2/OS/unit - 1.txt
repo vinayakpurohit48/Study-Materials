@@ -1,0 +1,40 @@
+Characteristics of Operating System : 
+=================================
+	- Recourse mana..
+	- process mana..
+	- memory mana..
+	- device mana..
+	- file mana..
+	- user interface
+	- security
+	- Job Accounting
+	- Error-detecting Aids
+	- Coordination between Other Software and Users
+
+
+Need of an Operating System : 
+============================
+	- Program Creation
+	-  Program Execution
+	- Access to I/O device
+	- Control access to files
+	- System access
+	-  Error Detection and response
+	- Accounting
+
+Elements of an Operating System
+===============================
+	- kernel
+	- Memory Management
+	- Input/output
+	- File Management
+	- User Interface
+
+ User Interface
+==============
+	- Batch Operating system
+	- Multiprogramming operating System
+	- Multiprogramming operating System
+	-  Distributed Operating System
+	- Network Operating System
+	-

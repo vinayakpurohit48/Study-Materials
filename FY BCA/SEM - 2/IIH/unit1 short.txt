@@ -1,0 +1,133 @@
+		=============================
+	  	     Unit 1: Introduction to Internet
+		=============================
+The Internet is the global system of interconnected computer networks that uses the Internet protocol suite (TCP/IP) to communicate between networks and devices.
+The Internet is a short form for an interconnected network
+With the Internet, it's possible to access almost any information, communicate with anyone 
+ Every computer in internet is identified by a unique IP address.
+
+Evolution of Internet:
+================= 
+		       The Internet was developed by Bob Kahn and Vint Cerf in the 1970s
+
+
+Internet Services:
+==============
+		      Communication Services
+		      Information Retrieval Services
+		      Web Services
+		      World Wide Web
+
+Advantages And Disadvantages of Internet:
+==================================
+1. Vast knowledge base
+2. Instant communication
+3. Navigationally helpful
+4. Online banking and finance are made possible
+5. Many Job Options
+6. Allows companies to grow and develop
+7. Global workforce accessibility
+8. Entertainment and pleasure
+9. Internet of Things
+10. Cloud storage
+11. Online Education
+12. Helpful for Students
+13. Make money online
+
+Disadvantages of the Internet:
+1. This can lead to addiction
+2. Bullying
+3. Spam and advertising
+4. Theft of identity		      
+5. Extended usage may result in physical and mental problems
+6. Separated from the Outside World
+7. Consumes Time
+8. Negatively influencing children
+9. Wrong-Handed Information
+
+1.2 Internet Connections
+====================
+1. Dial-up Connection
+2. ISDN
+3. DSL
+4. Cable TV Internet connections
+5. Satellite Internet connections
+6. Wireless Internet Connections
+7. Mobile Hotspot
+
+Dial-up Connection
+===============
+		- uses telephone line
+		- requires a modem
+		- make a call to specific number provided by an ISP
+		- the user cannot make or receive phone calls while connected to the internet.
+		- The maximum speed of a dial-up connection is 56 kilobits per second (Kbps)
+		- now mostly used in rural areas where high-speed internet access is not available.
+		- protocols:
+		1. Serial Line Internet Protocol (SLIP)
+		2. Point to Point Protocol (PPP)
+
+ISDN
+=====
+
+		Integrated Services Digital Network
+		using the phone lines and digital signals
+		speeds of up to 128 kilobits per second (Kbps) or 2 megabits per second (Mbps), depending on the type of ISDN connection.
+		other features, including the ability to make multiple calls over a single line, caller ID, call forwarding, and other advanced telephony features
+		techniques:
+		 1. Basic Rate Interface [BRI(2B & 1D)]  
+ 		 2. Primary Rate Interface [PRI(23B & 1D)]
+			1B(bearer) = 64kbps
+			1Delta = 1 to 64 kbps 
+DSL
+====
+		Digital Subscriber Line
+		ordinary telephone lines
+		technique:
+		      1. Asymmetric DSL (ADSL): download speed > upload speed
+		      2. Symmetric DSL (SDSL) : download speed = upload speed
+		      3. High bit-rate DSL (HDSL)
+		      4. Rate adaptive DSL (RDSL)
+		      5. Very high bit-rate DSL (VDSL)
+		      6. ISDN DSL
+		A technology for high-speed network or Internet access over voice lines.
+		DSL is one of the most popular ways ISPs provide broadband internet access. 
+
+Cable TV Internet Connection
+==============
+				
+		- provided through Cable TV lines
+		- uses coaxial cable high capable
+		- modem is used to access this service
+		- modem comprises of two connections
+			- internet service
+			- TV signals
+		- data transfer rate also depends on number of customers using the internet at the same time
+
+Satellite Internet Connection
+=============
+
+		- offers high speed connection
+		- two types of internet connection
+			-  one way connection or two way connectio
+				- one way connection, we can only download and two way use for both
+
+Wireless Internet Connection
+=============
+		
+		- use of radio frequency bands
+		- offers a very high speed
+		- obtained by either WiFi or Bluetooth
+		-  Wi Fi wireless technology is based on IEEE 802.11 standards which allow the electronic 
+		   device to connect to the internet.
+		   Bluetooth wireless technology makes use of short-wavelength radio waves and helps to 
+		    create personal area network (PAN).
+Mobile Hotspot
+=======
+
+		- using Wi-Fi technology
+		- can be in a private location or a public one
+		- eg. coffee shop, a hotel, an airport, or even an airplane
+------------------------------------------------------------------------------------------------------------------------
+
+--> The system that handles this communication is called a Packet Routing Network 

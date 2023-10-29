@@ -1,0 +1,163 @@
+UNIT-1: Arrays, Structure & Union and User defined function in C programming
+Language
+1. What is an array in C? Explain with proper Example.
+--> In C, an array is a collection of elements of the same data type stored in a contiguous block of memory. Arrays are used to store multiple values of the same data type under a single variable name.
+
+Here's an example of how to declare and use an array in C:
+
+#include <stdio.h>
+
+int main() {
+  int my_array[5];    // Declare an integer array with 5 elements
+
+  // Initialize the array
+  my_array[0] = 10;
+  my_array[1] = 20;
+  my_array[2] = 30;
+  my_array[3] = 40;
+  my_array[4] = 50;
+
+  // Accessing array elements and printing their values
+  printf("The value of my_array[0] is %d\n", my_array[0]);   // Output: 10
+  printf("The value of my_array[2] is %d\n", my_array[2]);   // Output: 30
+
+  // Using a loop to access all elements of the array
+  for (int i = 0; i < 5; i++) {
+    printf("The value of my_array[%d] is %d\n", i, my_array[i]);
+  }
+
+  return 0;
+}
+
+In this example, we declare an integer array my_array with 5 elements using the syntax int my_array[5]. We then initialize the array with values 10, 20, 30, 40, and 50 using the assignment operator and array indexing notation.
+
+We can access individual elements of the array using the syntax my_array[index], where index is the zero-based index of the element we want to access. In the example above, we access the first and third elements of the array using my_array[0] and my_array[2], respectively.
+
+We can also use loops to iterate over the elements of the array, as shown in the for loop in the example above. This allows us to access and manipulate all elements of the array in a single block of code.
+
+
+2. Explain multidimensional Numeric array in detail.
+--> In C, a multidimensional numeric array is a collection of elements of the same data type, arranged in a rectangular grid with multiple rows and columns. A two-dimensional array can be thought of as a table with rows and columns, and a three-dimensional array can be thought of as a cube with length, width, and height.
+
+Here's an example of how to declare and use a two-dimensional numeric array in C:
+
+#include <stdio.h>
+
+int main() {
+  int matrix[3][3];    // Declare a 3x3 integer matrix
+
+  // Initialize the matrix
+  for (int i = 0; i < 3; i++) {
+    for (int j = 0; j < 3; j++) {
+      matrix[i][j] = i + j;
+    }
+  }
+
+  // Accessing matrix elements and printing their values
+  printf("The value of matrix[0][0] is %d\n", matrix[0][0]);   // Output: 0
+  printf("The value of matrix[1][2] is %d\n", matrix[1][2]);   // Output: 3
+
+  // Using loops to access all elements of the matrix
+  for (int i = 0; i < 3; i++) {
+    for (int j = 0; j < 3; j++) {
+      printf("The value of matrix[%d][%d] is %d\n", i, j, matrix[i][j]);
+    }
+  }
+
+  return 0;
+}
+
+In this example, we declare a two-dimensional integer array matrix with dimensions 3x3 using the syntax int matrix[3][3]. We then initialize the matrix with values that are the sum of their row and column indices using a nested for loop and array indexing notation.
+
+We can access individual elements of the matrix using the syntax matrix[row_index][column_index], where row_index is the zero-based index of the row and column_index is the zero-based index of the column. In the example above, we access the first and second elements of the matrix using matrix[0][0] and matrix[1][2], respectively.
+
+We can also use nested loops to iterate over all elements of the matrix. This allows us to access and manipulate all elements of the matrix in a single block of code. In the example above, we use nested for loops to print the values of all elements of the matrix.
+
+Similarly, we can declare and use a three-dimensional numeric array in C using the syntax int my_array[length][width][height], where length, width, and height are the dimensions of the array in the x, y, and z directions, respectively. We can access individual elements of the array using the syntax my_array[x][y][z], where x, y, and z are the zero-based indices of the element in each dimension. We can also use nested loops to iterate over all elements of the array.
+
+
+3. Explain multidimensional character array in detail.
+--> In C, a multidimensional character array is a collection of elements of the character data type, arranged in a rectangular grid with multiple rows and columns. A two-dimensional character array can be thought of as a table with rows and columns, and a three-dimensional character array can be thought of as a cube with length, width, and height.
+
+Here's an example of how to declare and use a two-dimensional character array in C:
+
+#include <stdio.h>
+
+int main() {
+  char names[3][20];    // Declare a 3x20 character array
+
+  // Initialize the array with strings
+  strcpy(names[0], "John Doe");
+  strcpy(names[1], "Jane Smith");
+  strcpy(names[2], "Bob Johnson");
+
+  // Accessing array elements and printing their values
+  printf("The value of names[0] is %s\n", names[0]);   // Output: John Doe
+  printf("The value of names[1] is %s\n", names[1]);   // Output: Jane Smith
+
+  // Using loops to access all elements of the array
+  for (int i = 0; i < 3; i++) {
+    printf("The value of names[%d] is %s\n", i, names[i]);
+  }
+
+  return 0;
+}
+In this example, we declare a two-dimensional character array names with dimensions 3x20 using the syntax char names[3][20]. We then initialize the array with strings using the strcpy function, which copies a string from one character array to another.
+
+We can access individual elements of the array using the syntax names[row_index][column_index], where row_index is the zero-based index of the row and column_index is the zero-based index of the character in the row. In the example above, we access the first and second elements of the array using names[0] and names[1], respectively.
+
+We can also use loops to iterate over all elements of the array. This allows us to access and manipulate all elements of the array in a single block of code. In the example above, we use a for loop to print the values of all elements of the array.
+
+Similarly, we can declare and use a three-dimensional character array in C using the syntax char my_array[length][width][height], where length, width, and height are the dimensions of the array in the x, y, and z directions, respectively. We can access individual elements of the array using the syntax my_array[x][y][z], where x, y, and z are the zero-based indices of the element in each dimension. We can also use loops to iterate over all elements of the array.
+
+
+4. Explain Row major and Column major in array.
+--> In computer programming, an array is a collection of elements of the same data type stored in contiguous memory locations. Arrays can be stored in memory in different ways, depending on the programming language and the underlying hardware architecture. Two common ways of storing arrays are row-major order and column-major order.
+
+In row-major order, also known as row-wise order, the elements of a two-dimensional array are stored row by row in memory, with consecutive rows stored contiguously. In other words, the elements in each row are stored together in memory, and consecutive rows are stored one after the other. For example, consider the following 2D array:
+
+1 2 3
+4 5 6
+7 8 9
+
+In row-major order, the elements of the array would be stored in memory as follows:
+
+1 2 3 4 5 6 7 8 9
+
+In column-major order, also known as column-wise order, the elements of a two-dimensional array are stored column by column in memory, with consecutive columns stored contiguously. In other words, the elements in each column are stored together in memory, and consecutive columns are stored one after the other. For example, consider the same 2D array as before:
+
+1 2 3
+4 5 6
+7 8 9
+
+In column-major order, the elements of the array would be stored in memory as follows:
+
+1 4 7 2 5 8 3 6 9
+
+The choice of row-major or column-major order can have performance implications in some cases, depending on how the array is accessed and manipulated. For example, if an algorithm primarily accesses the elements of the array row by row, then row-major order may be faster, since the elements of each row are stored together in memory. Conversely, if an algorithm primarily accesses the elements of the array column by column, then column-major order may be faster, since the elements of each column are stored together in memory.
+
+It's worth noting that row-major and column-major order are not the only ways to store arrays in memory. Other storage orders, such as diagonal-major order and block-major order, are also possible, depending on the application and the hardware architecture.
+
+
+5. What is the structure? Explain with proper Example.
+--> In computer programming, a structure is a user-defined data type that groups together related data items of different types under a single name. Structures allow you to create more complex data types that can be used to represent real-world objects or concepts in your program.
+
+In C programming language, a structure is defined using the struct keyword followed by the name of the structure and a set of curly braces that enclose the structure members. Each structure member is declared using a data type and an identifier, separated by a semicolon. For example, the following is a definition of a simple structure named person that has three members:
+
+struct person {
+  char name[50];
+  int age;
+  float height;
+};
+
+
+6. What are the ways of accessing structure member?
+7. What is typedef in C language?
+8. What is a union? Explain with proper Example.
+9. What is difference between structure and union? Explain in detail.
+10. Explain recursion in detail with an example.
+11. How to pass array to user defined function? Explain with example.
+12. What is difference between actual and formal parameter in C language?
+13. What is User defined functions? Explain with Example.
+14. Explain Recursive Function with example.
+15. Create a user defined function to find maximum number from 10 numbers.

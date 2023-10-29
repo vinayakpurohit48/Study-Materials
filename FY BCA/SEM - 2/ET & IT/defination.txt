@@ -1,0 +1,21 @@
+Software: Software is a collection of instructions that enable the user to interact with a 
+computer, its hardware, or perform tasks. 
+
+System software: System software is a type of computer program that is 
+designed to run a computer’s hardware and application programs
+
+BIOS : manages the data flow between the operating system and 
+attached devices such as the hard disk, video adapter, keyboard, mouse, 
+and printer
+
+The boot program loads the operating system into the computer's main 
+memory or random access memory (RAM).
+
+Application software : Application software is a set of one or more programs, 
+which solves a specific problem, or does a specific task.
+
+Web page : Web page is a document available on world wide web. Web Pages
+are stored on web server and can be viewed using a web browser
+
+
+

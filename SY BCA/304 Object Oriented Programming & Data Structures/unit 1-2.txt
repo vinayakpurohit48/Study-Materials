@@ -1,0 +1,11 @@
+-> Object Oriented Programming is a programming in which we design and develop our
+   application or program based of object.
+
+OBJECT:
+=======
+	- Object is a collection of number of entities.
+	- Objects take up space in the memory. Objects are instances of classes.
+	- When a program is executed , the objects interact by sending messages to 
+	  oneanother.
+	- Each object contain data and code to manipulate the data. Objects can
+	- interactwithout having know details of each others data or code.

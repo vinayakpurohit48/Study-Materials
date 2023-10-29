@@ -1,0 +1,31 @@
+Device Management
+===================
+
+--> Device management is responsible for managing all the hardware devices of the computer system.
+--> It may also include the management of the storage device as well as the management of all the input
+       and output devices of the computer system
+--> check status of computing devices If a device requested is free allocates it to the process
+--> All these devices controllers are connected with each other through a system bus
+
+Device management Functions
+==========================
+1. Track the status of each device such as disk drive, printer, plotters and terminals.
+2. Use the algorithm to decide which process will get a device and for how long.
+3. Allocate the devices.
+4. De-allocate devices
+At two level deallocation
+        1) command Level : When the I/O command has been executed 
+        2) Process Level :  When the process has been terminated
+
+Characteristics of I/O Devices or Device Characteristics
+=============================================
+
+	-  Speed  : refers to how quickly it can transfer data to or from the computer system
+	-  Capacity  : refers to the amount of data that it can store or process
+	-  Connectivity  : refers to how it connects to the computer system. For example, a device may use a
+                                                  USB, Ethernet, or Wi-Fi connection to communicate with the computer system  
+	-  Interface  : 
+	-  Reliability
+	-  Durability
+	-  Compatibility
+	-  Power Consumption

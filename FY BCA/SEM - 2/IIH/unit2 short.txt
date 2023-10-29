@@ -1,0 +1,88 @@
+Internet Protocols
+=========
+		- Transmission Control Protocol (TCP)
+		- Internet Protocol (IP)
+		- User Datagram Protocol (UDP)
+		- File Transfer Protocol (FTP)
+		- Trivial File Transfer Protocol (TFTP)
+		- Hyper Text Transfer Protocol (HTTP)
+
+Transmission Control Protocol (TCP)
+=================
+		
+		- oriented connection protocol
+		- end-to-end packet delivery
+		- TCP is a reliable
+		- TCP offers:
+			o Stream Data Transfer.
+			o Reliability.
+			o Efficient Flow Control
+			o Full-duplex operation.
+			o Multiplexing
+
+Internet Protocol (IP)
+==========
+
+		- connectionless and unreliable protocol
+		- no guarantee of successfully transmission of data
+		- must be paired with reliable protocol such as TCP
+		-  transmits the data in form of a datagram or packets
+		- The purpose of TCP is to provide reliable, ordered, and error-checked delivery of data between
+applications running on hosts. It establishes a connection between the sender and receiver and manages the flow of
+data between them, ensuring that all data is received correctly User Datagram Protocol (UDP)
+===============
+		
+		- connectionless and unreliable protocol
+		- doesn’t require making a connection with the host to exchange data
+		- no mechanism for ensuring that data sent is received
+		- UDP transmits the data in form of a datagram.
+		-  transmit small amount of data at one time
+		-  contains both port number
+		- The purpose of UDP is to provide fast and lightweight communication. It is used when speed is more
+important than reliability or error checking, such as in real-time video or audio streaming.
+File Transfer Protocol
+==========
+
+		- used to copy files from one host to another
+		- establishes two different connections
+			--> one is for data transfer (uses port 21)
+			--> other is for control information (uses port 20)
+		- The purpose of FTP is to provide a way to access and transfer files between computers
+on the internet. It allows users to upload and download files to and from servers, and includes features for
+authentication and security.
+
+Trivial File Transfer Protocol (TFTP)
+=================
+
+		- transfers the files without authentication
+		- TFTP does not separate control and data information
+		- TFTP lacks in security features
+		- not recommended to use 
+		- The purpose of TFTP is to provide a simple and lightweight way to transfer files, especially
+in situations where more advanced features such as authentication and security are not required.
+Hyper Text Transfer Protocol (HTTP)
+=================
+
+		- Hyper Text Transfer Protocol (HTTP)
+		- defines mechanism for communication between browser and the web server
+		- also called request and response protocol
+		- the communication between browser and server takes place in request and response pairs
+		- The purpose of HTTP is to transmit data over the internet, specifically for web browsing. It is
+used for fetching web pages, images, and other resources, and allows clients (such as web browsers) to communicate
+with servers (such as web servers) to retrieve and display content.
+
+ISP (Internet Service Provider)
+===============
+
+		- Internet Access
+		- Domain name registration
+		- Dial-up access
+		- Leased line access
+ISP TYPES
+======
+
+		- Access providers
+		- Mailbox Provider
+		- Hosting ISPs
+		- Virtual ISPs
+		- Free ISPs

@@ -1,0 +1,32 @@
+-> Object Oriented Programming is a programming in which we design and develop
+   our application or program based of object. 
+   Objects are instances(variables) of class.
+-> Combining data and functions into a single unit called class and the process is 
+   knownas Encapsulation.
+
+-> Hiding the complexity of program is called Abstraction 
+
+-> Dynamic binding is a concept in computer programming that's like a "last-minute
+   decision" about which piece of code to run. Here's an easy way to understand it
+
+-> Inheritance in computer programming is a mechanism that allows one class (known as
+   the "child" or "subclass") to inherit the properties and behaviors (attributes and
+   methods) of another class (known as the "parent" or "superclass").
+
+-> polimorphisam that allows objects of different classes to be treated as objects of a
+   common parent class.
+
+-> conio=Console Input-Output Header
+
+-> iostream.h = Input-Output Stream Header
+
+-> An enumeration is a user-defined data type that consists of integral constants.
+
+-> spoce resolution to specify the scope or context from which a particular variable,
+   function, or class member should be accessed.
+
+-> A data structure is like a way to organize and store data in a computer so that it
+   can be easily accessed and used efficiently
+
+
+

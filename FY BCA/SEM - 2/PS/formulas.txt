@@ -1,0 +1,11 @@
+fibonacci series = fibonacii(n-1)+fibonacci(n-2)
+area of triangle = 1/2 * L * W
+area of circle   = π × (radius)²
+area of rectangle = length x width
+compound interest = principal * (pow((1 + rate / 100), time))
+
+
+
+
+
+1 Inch = 2.54 Centimetre

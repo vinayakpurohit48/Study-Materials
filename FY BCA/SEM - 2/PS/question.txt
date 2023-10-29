@@ -1,0 +1,17 @@
+Q1. what is variable length and fixed length
+
+Lexicographic order : Lexicographic order is the way of ordering words based on the alphabetical 
+order of their component letters. It is also known as lexical order, dictionary order, and 
+alphabetical order. It is similar to the way we search for any word in the dictionary. We 
+start our search by simply searching for the first letter of the word. Then we try to find 
+the second letter and so on. The words in the dictionary are arranged in lexicographic 
+order
+
+The simplest difference between sort() and sorted() is: sort() changes the list 
+directly and doesn't return any value, while sorted() doesn't change the list and returns 
+the sorted list
+
+Typedef : 
+
+structure vs Union
+array vs structure

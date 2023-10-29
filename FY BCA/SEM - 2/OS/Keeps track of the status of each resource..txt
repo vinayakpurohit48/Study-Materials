@@ -1,0 +1,21 @@
+	    ======================
+	      Operating System as a Resource Manager
+	    ======================
+
+- resource allocator
+- resources sharing ("in time" and "in space" - when multi user)
+- File Management
+
+- In resource management, an operating system collects all the resources   in the network environment and allocates the resources to efficiently   request the process
+
+
+Resourse Allocator
+=========
+		The operating system acts as the manager of these resources and allocates them to specific programs and users as necessary for their tasks. Therefore we can say an operating system is a resource allocator. This is the main features of an operating system
+
+- Keeps track of the status of each resource.
+- Decides which job should get the resource and for how much time.
+- Allocates the resources to the job decided.
+- Reclaims the resource after the job uses it for the allocated time
+
+for more:- https://gkscientist.com/operating-system-as-a-resource-manager/

@@ -1,0 +1,78 @@
+1. Differentiate between structure and class.
+-->
+Structure is a user-defined data type in C/C++ used to group variables under one name.
+Class is a user-defined data type in object-oriented programming (OOP) that can contain
+data members (variables) and member functions (methods).
+
+2. How scope resolution operator used in different ways in object oriented
+programming?
+-->
+The scope resolution operator is a unique operator that is used to access variables and
+functions that exist within a specific scope. In C++, the scope resolution operator is
+represented by two colons (::) and is placed in front of the name of the variable or
+function that is being accessed.The scope resolution operator helps us in understanding
+the scope of variables and functions. It helps us adjust the scope to make sure our code
+works as we want it to
+
+3. Explain the significance of 'this' pointer.
+-->
+
+
+4. How the constructor is called in multilevel inheritance? Explain it with example.
+-->
+
+
+5. List out the operators where friend cannot be used.
+-->
+
+
+6. What is stack? Explain significance of TOP pointer in stack.
+-->
+
+
+7. Explain difference between simple queue and circular queue.
+-->
+
+
+8. What is recursion? Give example of it.
+-->
+
+
+9. Convert Infix to Postfix: A* (B-C * D) +E/F.
+-->
+
+
+10. List out the operators that cannot be overloaded.
+-->
+
+
+11. What is the difference between private and protected visibility mode?
+-->
+
+
+12. What is static binding?
+-->
+
+
+13. What is the advantage of new operator over malloc()?
+-->
+
+
+14. What is data structure? Differentiate between linear and non-linear data structure.
+-->
+
+
+15. What is stack? List out application of stack.
+-->
+
+
+16. Write a condition for circular queue overflow.
+-->
+
+
+17. What is top pointer in stack? What is its significance?
+-->
+
+
+18. Differentiate between overloading and overriding
+-->

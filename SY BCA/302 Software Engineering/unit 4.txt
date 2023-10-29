@@ -1,0 +1,25 @@
+ 	- 
+	- 
+	- 
+	- 
+	- 
+	- 
+	- 
+	- 
+	- 
+
+COHESION:
+ 	- Co-incidental cohesion
+	- Logical cohesion
+	- Temporal Cohesion
+	- Procedural cohesion
+	- Communicational cohesion
+	- Sequential cohesion
+	- Functional cohesion
+
+coupling: 
+ 	- Content coupling
+	- Common coupling
+	- Control coupling
+	- Stamp coupling
+	- Data coupling

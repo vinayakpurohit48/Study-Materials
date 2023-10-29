@@ -1,0 +1,200 @@
+Q1.Create Student Table with appropriate constraints.
+STUDENT(sno number primary key, sname text(20), age number, total_marks number) 
+
+sqlite> create table STUDENT(
+(x1...> sno number primary key,
+(x1...> sname text(20) not null,
+(x1...> age number,
+(x1...> total_marks number);
+
+sqlite> insert into STUDENT values(101,'vinayak',18,570);
+sqlite> insert into STUDENT values(102,'john',19,490);
+sqlite> insert into STUDENT values(103,'alex',17,530);
+sqlite> insert into STUDENT values(104,'micheal',19,550);
+
+sqlite> select * from STUDENT;
++-----+---------+-----+-------------+
+| sno |  sname  | age | total_marks |
++-----+---------+-----+-------------+
+| 101 | vinayak | 18  | 570         |
+| 102 | john    | 19  | 490         |
+| 103 | alex    | 17  | 530         |
+| 104 | micheal | 19  | 550         |
++-----+---------+-----+-------------+
+
+Q2. Create following table and store any five records:
+Employee(eno number primary key, Ename text(20),designation text(10),basic number , da number,
+gross_salary number)
+
+sqlite> CREATE TABLE IF NOT EXISTS Employee (
+(x1...>     eno INTEGER PRIMARY KEY,
+(x1...>     Ename TEXT(20),
+(x1...>     designation TEXT(10),
+(x1...>     basic REAL,
+(x1...>     da REAL,
+(x1...>     gross_salary REAL
+(x1...> );
+sqlite> insert into Employee values (1, 'Vinayak', 'Manager', 50000, 10000, 60000);
+sqlite> insert into Employee values (2, 'Jane Smith', 'Engineer', 45000, 9000, 54000);
+sqlite> insert into Employee values (3, 'shailesh', 'Developer', 55000, 11000, 66000);
+sqlite> insert into Employee values (4, 'siddharth', 'Analyst', 48000, 9600, 57600);
+sqlite> insert into Employee values (5, 'Eva Brown', 'Designer', 42000, 8400, 50400);
+sqlite> select * from Employee;
+┌─────┬────────────┬─────────────┬─────────┬─────────┬──────────────┐
+│ eno │   Ename    │ designation │  basic  │   da    │ gross_salary │
+├─────┼────────────┼─────────────┼─────────┼─────────┼──────────────┤
+│ 1   │ Vinayak    │ Manager     │ 50000.0 │ 10000.0 │ 60000.0      │
+│ 2   │ Jane Smith │ Engineer    │ 45000.0 │ 9000.0  │ 54000.0      │
+│ 3   │ shailesh   │ Developer   │ 55000.0 │ 11000.0 │ 66000.0      │
+│ 4   │ siddharth  │ Analyst     │ 48000.0 │ 9600.0  │ 57600.0      │
+│ 5   │ Eva Brown  │ Designer    │ 42000.0 │ 8400.0  │ 50400.0      │
+└─────┴────────────┴─────────────┴─────────┴─────────┴──────────────┘
+
+Q3.
+
+sqlite> CREATE TABLE IF NOT EXISTS sales (
+(x1...>     sid INTEGER PRIMARY KEY AUTOINCREMENT,
+(x1...>     year INTEGER NOT NULL,
+(x1...>     totalsales REAL,
+(x1...>     CONSTRAINT year_check CHECK (year >= 0),
+(x1...>     CONSTRAINT totalsales_check CHECK (totalsales >= 0)
+(x1...> );
+sqlite> insert into sales values(1,2018,53000.33);
+sqlite> insert into sales values(2,2019,24000.56);
+sqlite> insert into sales values(3,2020,34200.42);
+sqlite> insert into sales values(4,2021,31220.23);
+sqlite> insert into sales values(5,2022,50220.87);
+sqlite> .mode box
+sqlite> select * from sales;
+┌─────┬──────┬────────────┐
+│ sid │ year │ totalsales │
+├─────┼──────┼────────────┤
+│ 1   │ 2018 │ 53000.33   │
+│ 2   │ 2019 │ 24000.56   │
+│ 3   │ 2020 │ 34200.42   │
+│ 4   │ 2021 │ 31220.23   │
+│ 5   │ 2022 │ 50220.87   │
+└─────┴──────┴────────────┘
+sqlite> .mode csv
+sqlite> .header on
+sqlite> .output sales.csv
+sqlite> select * from sales;
+
+Q6.
+
+sqlite> CREATE TABLE sales (
+(x1...> sid INTEGER PRIMARY KEY AUTOINCREMENT,
+(x1...> year INTEGER NOT NULL,
+(x1...> totalsales REAL,
+(x1...> CONSTRAINT year_check CHECK (year >= 0),
+(x1...> CONSTRAINT totalsales_check CHECK (totalsales >= 0));
+
+sqlite> INSERT INTO Employee VALUES(1,'Vinayak','Manager',50000.0,10000.0,60000.0);
+sqlite> INSERT INTO Employee VALUES(2,'Jane Smith','Engineer',45000.0,9000.0,54000.0);
+sqlite> INSERT INTO Employee VALUES(3,'shailesh','Developer',55000.0,11000.0,66000.0);
+sqlite> INSERT INTO Employee VALUES(4,'siddharth','Analyst',48000.0,9600.0,57600.0);
+sqlite> INSERT INTO Employee VALUES(5,'Eva Brown','Designer',42000.0,8400.0,50400.0);
+
+sqlite> .header on
+sqlite> .mode csv
+sqlite> .output sales.csv
+sqlite> select * from sales;
+
+Q7. Create following table with appropriate constraintsin Collage Database: Employee (E_ID,
+Name,Dob, Designation, Salary ) a) Dump Employee table structure and data in Emp.csv file. 
+b) Dump whole Database named College in Emp1.csv file
+
+sqlite> CREATE TABLE Employee (
+(x1...> E_ID INTEGER PRIMARY KEY,
+(x1...> Name TEXT NOT NULL,
+(x1...> Dob DATE,
+(x1...> Designation TEXT NOT NULL,
+(x1...> Salary REAL CHECK (Salary >= 0)
+(x1...> );
+sqlite> INSERT INTO Employee VALUES(1,'Amrit','1990-01-15','Manager',60000.0);
+sqlite> INSERT INTO Employee VALUES(2,'Suresh','1995-03-22','Engineer',55000.0);
+sqlite> INSERT INTO Employee VALUES(3,'kartik','1987-07-10','Analyst',50000.0);
+sqlite> INSERT INTO Employee VALUES(4,'Ajay','1992-09-05','Designer',52000.0);
+sqlite> INSERT INTO Employee VALUES(5,'Ram','1998-12-30','Developer',58000.0);
+sqlite> INSERT INTO Employee VALUES(6,'Laxman','1994-06-18','Tester',53000.0);
+sqlite> .mode box
+sqlite> select * from Employee;
+┌──────┬────────┬────────────┬─────────────┬─────────┐
+│ E_ID │  Name  │    Dob     │ Designation │ Salary  │
+├──────┼────────┼────────────┼─────────────┼─────────┤
+│ 1    │ Amrit  │ 1990-01-15 │ Manager     │ 60000.0 │
+│ 2    │ Suresh │ 1995-03-22 │ Engineer    │ 55000.0 │
+│ 3    │ kartik │ 1987-07-10 │ Analyst     │ 50000.0 │
+│ 4    │ Ajay   │ 1992-09-05 │ Designer    │ 52000.0 │
+│ 5    │ Ram    │ 1998-12-30 │ Developer   │ 58000.0 │
+│ 6    │ Laxman │ 1994-06-18 │ Tester      │ 53000.0 │
+└──────┴────────┴────────────┴─────────────┴─────────┘
+sqlite> .mode csv
+sqlite> .output Emp.csv
+sqlite> .schema Employee
+
+sqlite> select * from Employee;
+sqlite> .output Emp1.csv
+sqlite> .dump
+
+Q8. 
+sqlite> CREATE TABLE Product (
+(x1...> prod_id TEXT PRIMARY KEY,
+(x1...> prod_name TEXT NOT NULL,
+(x1...> price real NOT NULL,
+(x1...> qty INTEGER not null,
+(x1...> total_amount REAL);
+
+sqlite> .mode csv
+sqlite> .import product.csv Product
+sqlite> .mode box
+sqlite> select * from Product;
+┌─────────┬─────────────┬──────────┬─────┬──────────────┐
+│ prod_id │  prod_name  │  price   │ qty │ total_amount │
+├─────────┼─────────────┼──────────┼─────┼──────────────┤
+│ 101     │  'Laptop'   │ 25000.0  │ 5   │ 125000.0     │
+│ 102     │  'Mobile'   │ 15000.0  │ 10  │ 150000.0     │
+│ 103     │  'TV'       │ 18000.0  │ 13  │ 234000.0     │
+│ 104     │  'Moniter'  │ 16500.0  │ 8   │ 132000.0     │
+│ 105     │  'Computer' │ 123500.0 │ 6   │ 741000.0     │
+└─────────┴─────────────┴──────────┴─────┴──────────────┘
+
+sqlite> .mode csv
+sqlite> .output prod.csv
+sqlite> select * from Product;
+
+Q9. 
+
+sqlite> CREATE TABLE Employees (
+(x1...> Eno INTEGER PRIMARY KEY,
+(x1...> Ename TEXT NOT NULL,
+(x1...> Desg TEXT,
+(x1...> Salary REAL,
+(x1...> City TEXT,
+(x1...> Email TEXT
+(x1...> );
+sqlite> create trigger check_email
+   ...> before
+   ...> insert on Employees
+   ...> begin
+   ...>         select
+   ...>                 case
+   ...>                         when new.email not like '%_@_%._%'
+   ...>                 then
+   ...>                         raise(abort,'Invail Email Address')
+   ...>         end;
+   ...> end;
+
+sqlite> insert into Employees values(1,'Ram prasad','Account',150000,'Surat','@ram.gmail.com');
+Runtime error: Invail Email Address (19)
+sqlite> insert into Employees values(1,'Ram prasad','Account',150000,'Surat','ramprasad@gmail.com');sqlite> insert into Employees values(2,'Vinayak Purohit','Cyber security',230000,'Surat','purohitvinayak48@gmail.com');
+sqlite> insert into Employees values(3,'Vishal','CA',124000,'Surat','@gmail.vishal.in');
+Runtime error: Invail Email Address (19)
+sqlite> .mode box
+sqlite> select * from Employees;
+┌─────┬─────────────────┬────────────────┬──────────┬───────┬────────────────────────────┐
+│ Eno │      Ename      │      Desg      │  Salary  │ City  │           Email            │
+├─────┼─────────────────┼────────────────┼──────────┼───────┼────────────────────────────┤
+│ 1   │ Ram prasad      │ Account        │ 150000.0 │ Surat │ ramprasad@gmail.com        │
+│ 2   │ Vinayak Purohit │ Cyber security │ 230000.0 │ Surat │ purohitvinayak48@gmail.com │
+└─────┴─────────────────┴────────────────┴──────────┴───────┴────────────────────────────┘

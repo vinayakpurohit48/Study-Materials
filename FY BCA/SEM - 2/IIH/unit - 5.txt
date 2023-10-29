@@ -1,0 +1,85 @@
+HTML Form Controls
+==================
+	- TEXT INPUT Controls
+	- Selectboxes control
+	- File select control
+	- chechbox control
+	- radiobox control
+	- clickable buttons
+	- submit and reset buttons
+	- hidden control
+
+TEXT INPUT Controls: 
+	- Single-line text input controls: Using <input> tag
+	- Password input controls
+	- Multi-line text input controls: using <textarea>
+
+- Single-line text input controls: Using <input> tag
+	    eg. Name, E-mail, mobile
+	           First name: <input type = "text" name = "first_name" />
+	            <br>
+	            Last name: <input type = "text" name = "last_name" />
+	- type
+	- name
+	- size
+	- maxlength
+	- value : This can be used to provide an initial value inside the control.
+
+Password input controls: 
+<form >
+ User ID : <input type = "text" name = "user_id" />
+ <br>
+ Password: <input type = "password" name = "password" />
+ </form>
+	- type : it will be set to password
+	- name
+	- value
+	- size
+	- maxlength
+
+Multi-line text input controls:
+- created using HTML <textarea> tag
+eg. <form>
+ Description : <br />
+ <textarea rows = "5" cols = "50" name = "description">
+ Enter description here...
+ </textarea>
+ </form>
+
+	- name
+	- rows
+	- cols
+
+Checkbox Control:
+================
+--> used when more than one option is required to be selected
+--> created using HTML <input> tag but type attribute is set to checkbox
+eg. <form>
+ <input type = "checkbox" name = "maths" value = "on">
+Maths 
+<input type = "checkbox" name = "physics" value = "on">
+Physics
+ </form>
+	- Type : checkbox
+	- name : control which is sent to the server to be recognized and get the value.
+	- value : The value that will be used if the checkbox is selected
+	- checked: if you want to select it by default
+
+Select Box Control
+================
+--> A select box, also called drop down box
+-->  user can select one or multioptions (like : clg name in list)
+eg. <form>
+ <select name = "dropdown">
+ <option value = "Maths" selected>Maths</option>
+ <option value = "Physics">Physics</option>
+ </select>
+ </form>
+
+--> If set to "multiple" then allows a user to select multiple items from the menu.
+
+Submit and Reset Button:
+========================
+<form>
+ <input type = "submit" name = "submit" value = "Submit" />
+ <input type = "reset" name = "reset" value = "Reset" />

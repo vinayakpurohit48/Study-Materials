@@ -1,0 +1,86 @@
+1. Python Program to Print Hello world!
+2. Python Program to Add Two Numbers
+3. Python Program to find Maximum of two numbers in Python
+4. Python Program for factorial of a number
+--> n = int(input("Enter the number: "))
+temp = n
+fact = 1
+while(temp > 0):
+    fact = temp * fact
+    print("%d*"%temp,end="")
+    temp-=1
+print("The factorial of n number is: ",fact)
+==================================================
+
+5. Python Program for simple interest
+--> p = int(input("Enter the principal: "))
+r = float(input("Enter the Rate of principal: "))
+t = float(input("Enter your time: "))
+
+si = (p*r*t)/100
+pa = si + p
+print("The simple interest is: ",si)
+print("Your total payble Amount(With Interest) is",pa)
+=================================================
+
+6. Python Program for compound interest
+--> p = int(input("Enter the principal: "))
+r = float(input("Enter the Rate of principal: "))
+t = float(input("Enter your time: "))
+
+ci = p+(pow((1+r/100),t))
+print("The compound interest is: ",ci)
+============================================
+
+7. Python Program to check Armstrong Number
+--> num = int(input("Enter the num to check: "))
+temp = num
+ans = 0
+len = len(str(num))
+while temp>0:
+    digit = temp%10
+    ans += digit**len
+    temp //= 10
+if (ans == num):
+    print("Yes")
+else:
+    print("Not a armstrong number")
+
+=====================================================
+8. Python Program for Program to find area of a circle
+9. Python program to check whether a number is Prime or not
+10. Python program to print all Prime numbers in an Interval
+11. Python Program for n-th Fibonacci number
+12. Python Program for How to check if a given number is Fibonacci number?
+13. Program to print ASCII Value of a character
+14. Python Program for Sum of squares of first n natural numbers
+15. Python Program for cube sum of first n natural numbers
+16. Python Program to Calculate the Area of a Triangle
+17. Python Program to Swap Two Variables
+18. Python Program to Generate a Random Number
+19. Python Program to Convert Kilometers to Miles
+20. Python Program to Convert Celsius To Fahrenheit
+21. Python Program to Check if a Number is Positive, Negative or 0
+22. Python Program to Check if a Number is Odd or Even
+23. Python Program to Check Leap Year
+24. Python Program to Find the Largest Among Three Numbers
+25. Python Program to Find the Factorial of a Number
+
+26. Python Program to Display the multiplication Table
+27. Python Program to Print the Fibonacci sequence
+28. Python Program to Check Armstrong Number
+29. Python Program to Find Armstrong Number in an Interval
+30. Python Program to Find the Sum of Natural Numbers
+31. Python Program to Find Numbers Divisible by Another Number
+32. Python Program to Convert Decimal to Binary, Octal and Hexadecimal
+33. Python Program to Find ASCII Value of Character
+34. Python Program to Find HCF or GCD
+35. Python Program to Find LCM
+36. Python Program to Find the Factors of a Number
+37. Python Program to Make a Simple Calculator
+38. Python Program to Compute the Power of a Number
+39. Python Program to Count the Number of Digits Present In a Number
+40. Python Program to Convert Bytes to a String
+41. Python Program for Difference between sums of odd and even digits
+42. Python program to do arithmetical operations
+43. Python program to generate a random number

@@ -1,0 +1,106 @@
+UNIT-3: Python Strings and Operators
+1. How to store a multiline string in Python str variable?
+--> In Python, you can store a multiline string in a str variable using triple quotes. Triple quotes are used to define a string that spans multiple lines.
+
+Here's an example:
+
+multiline_string = """This is a
+multiline
+string"""
+  		or	
+multiline_string = '''This is a
+multiline
+string'''
+
+2. List all operators in Python and explain identity and member operators.
+3. What Does the // Operator Do in python?
+--> The // operator is the floor division operator in Python. It performs integer division and returns the largest integer that is less than or equal to the quotient of the two operands.
+
+
+4. What is slice operator [] in python String? Explain with example.
+--> In Python, the slice operator [] is used to extract a part of a string, list, or any other sequence type object.
+	
+SYNTAX:
+======
+		string[start:end:step]
+
+start: start is the starting index of the slice. If not specified, it defaults to 0 (the beginning of the string).
+
+end: end is the ending index of the slice. If not specified, it defaults to the end of the string.
+
+step: step is the step size of the slice. If not specified, it defaults to 1 (i.e., every character in the slice is selected).
+ Eg.
+
+my_string = "Hello, world!"
+
+# Get the first five characters
+print(my_string[0:5])   # Output: "Hello"
+
+# Get the characters from index 7 to the end of the string
+print(my_string[7:])    # Output: "world!"
+
+# Get every other character in the string
+print(my_string[::2])   # Output: "Hlo ol!"
+
+# Get the characters from index 2 to index 9 with a step of 3
+print(my_string[2:10:3])  # Output: "l,w"
+
+# Get the last character in the string
+print(my_string[-1])    # Output: "!"
+
+# Get the characters from the end of the string up to index 3
+print(my_string[:-4])   # Output: "Hello, wo"
+
+In the above examples, we are using the slice operator to extract parts of the string based on the start, end, and step values. We can also use negative indices to slice the string from the end instead of the beginning.
+
+Note that the slice operator returns a new string object that contains the selected characters, and the original string is not modified.
+
+5.What is string? Explain negative slicing string in Python language.
+--> In Python, a string is a sequence of characters enclosed within quotes, either single quotes ('...') or double quotes ("..."). A string is an immutable object, meaning that once created, its contents cannot be modified.
+
+Negative slicing in Python is a technique for accessing parts of a string using negative indices. In Python, a negative index counts from the end of the string, with -1 representing the last character in the string, -2 representing the second-to-last character, and so on.
+Eg.
+my_string = "Hello, world!"
+
+# Get the last character in the string
+print(my_string[-1])    # Output: "!"
+
+# Get the last five characters in the string
+print(my_string[-5:])   # Output: "world!"
+
+# Get every other character in the string, starting from the end
+print(my_string[::-2])  # Output: "!lo leH"
+
+# Get the characters from the end of the string up to index 3
+print(my_string[:-4])   # Output: "Hello, wo"
+
+In the above examples, we are using negative indices to access parts of the string. For example, -1 is used to access the last character of the string, -5: is used to access the last five characters of the string, and ::-2 is used to get every other character in the string, starting from the end.
+
+Note that negative slicing returns a new string object that contains the selected characters, and the original string is not modified.
+
+
+6. Explain any six string methods in Python.
+		
+		- format(value) 
+		- center(width ,fillchar)
+		- string.count(value, start, end)
+		- join(seq)
+		- len(string) 
+		- max() 
+		- min()
+		- replace(old,new[,count]) 
+		- upper()
+		- lower()
+		- split(separator, maxsplit)
+
+
+7. Which operator is used for string concatenation?
+--> In Python, the + operator is used for string concatenation. When the + operator is used with two string values, it concatenates the strings to form a new string.
+For example:
+
+greeting = "Hello"
+name = "Alice"
+message = greeting + ", " + name + "!"
+print(message)    # Output: "Hello, Alice!"
+
+In this example, the + operator is used to concatenate the strings "Hello", ", ", "Alice", and "!" to form the new string "Hello, Alice!".

@@ -1,0 +1,36 @@
+File Attribute
+=============
+	- Name
+	- Identifier
+	- Type
+	- Location
+	- Size
+	- Protection
+	- Time and Date
+
+Operations on File : 
+=================
+	- Creating File
+	- Writing File
+	- Reading File
+	- Repositioning within file
+	- Deleting File
+	- Truncating File 
+
+File Types :
+===========
+	- Archive
+	- Batch file
+	- Executable
+	- Multi media
+	- Library
+	- Object file
+	- print or view
+	- sourse
+	- word processor
+
+File Access Method :
+===================
+	- Sequential Access
+	- Direct access or random access
+	- Index sequential access

@@ -1,0 +1,101 @@
+create table Artist(
+aid number(3) primary key,
+fname varchar(10) not null,
+lname varchar(10) not null
+);
+
+
+create table Paintings
+(
+pid number(3) primary key,
+pname varchar(18) not null,
+aid number(3) not null,
+foreign key(aid) references Artist(aid),
+listed_price number(7) not null
+);
+
+
+insert into Artist values(201,'Jamini','Roy');
+insert into Artist values(202,'Nandlal','Bose');
+insert into Artist values(203,'Raja Ravi','Verma');
+insert into Artist values(204,'Nicholas','Roerich');
+insert into Artist values(205,'S L','Haldankar');
+
+insert into paintings values(101,'Krishna with Gopis',201,14000);
+insert into paintings values(102,'Three Pujarins',201,10000);
+insert into paintings values(103,'Damayanti',203,17000);
+insert into paintings values(104,'Shakuntala',203,13000);
+insert into paintings values(105,'Yashoda Krishna',203,20000);
+insert into paintings values(106,'Krishna',204,20000);
+insert into paintings values(108,'Glow of Hope',205,25000);
+
+(2) Display all the details of artist who painting id =104
+
+SQL> SELECT * FROM Artist
+  2  WHERE aid = (SELECT aid FROM Paintings WHERE pid = 104);
+
+       AID FNAME      LNAME
+---------- ---------- ----------
+       203 Raja Ravi  Verma
+
+(3) Display all the details of artist who painting id =104, 106,108 
+	   
+SQL> SELECT * FROM Artist
+  2  WHERE aid IN (SELECT aid FROM Paintings WHERE pid IN (104, 106, 108));
+
+       AID FNAME      LNAME
+---------- ---------- ----------
+       203 Raja Ravi  Verma
+       204 Nicholas   Roerich
+       205 S L        Haldankar
+	   
+(4) Display the total painting price artist wise
+
+SQL> select artist.fname, sum(paintings.listed_price)
+  2  from artist join paintings
+  3  on artist.aid = paintings.aid
+  4  group by artist.fname order by artist.fname;
+
+FNAME      SUM(PAINTINGS.LISTED_PRICE)
+----------       ---------------------------
+Jamini                          24000
+Nicholas                         20000
+Raja Ravi                       50000
+S L                            25000
+
+(5) Display artist name who are not having any painting.
+ 
+SQL> select fname, lname from artist
+  2  where aid not in (select aid from paintings);
+
+FNAME      LNAME
+---------- ----------
+Nandlal    Bose
+
+(6) Display artist name who are having maximum painting.
+
+SQL> SELECT Artist.fname, Artist.lname
+  2  FROM Artist INNER JOIN (
+  3    SELECT aid, COUNT(*) as num_paintings
+  4    FROM Paintings GROUP BY aid   
+  5  ) max_paintings ON Artist.aid = max_paintings.aid
+  6  WHERE max_paintings.num_paintings = (
+  7    SELECT MAX(num_paintings) FROM (
+  8      SELECT COUNT(*) as num_paintings
+  9      FROM Paintings GROUP BY aid
+ 10    )
+ 11  );
+
+FNAME      LNAME
+---------- ----------
+Raja Ravi  Verma
+
+
+(7) Display artist name whose painting with highest price.
+
+SQL> select fname, lname from Artist
+  2  where aid = (select aid from paintings where listed_price = (select max(listed_price) from paintings));
+
+FNAME      LNAME
+---------- ----------
+S L        Haldankar

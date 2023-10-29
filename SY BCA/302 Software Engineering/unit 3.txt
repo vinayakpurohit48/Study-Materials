@@ -1,0 +1,65 @@
+Software Requirement:
+ A condition or capability needed by a user to solve a problem or achieve 
+an objective.
+
+Types of Requirements: 
+ 	- Functional Requirement
+	- Non - Functional Requirement
+	- Domain Requirement
+
+Requirment analisis principal: 
+ 	- Identify Stakeholders
+	- Gather Requirements
+	- Analyze Requirements
+	- Prioritize Requirements
+	- Document Requirements
+	- Validate Requirements
+	- Manage Changes
+	- Traceability
+	- Review and Verification
+	- Communication
+
+Fact Finding Techniques:
+	- Interview
+	- Questionnaire
+	- Record Review
+	- Observation
+	- Joint Application Development
+	- Facilitated Application Specification Technique
+	- Rapid Application Development
+	- Sampling of documentation, forms and files
+
+Characteristics of SRS:
+ 	- Complete
+	- Consistent
+	- Correct
+	- Modifiable
+	- Ranked
+	- Testable
+	- Traceable
+
+Components of SRS: 
+ 	- Functionality
+	- Performance
+		- static
+		- dynamic
+	- Design Constraints
+	- External Interfaces
+
+Cohesion: 
+Cohesion is the indication of the relationship within the module. It is the concept of intra-module. Cohesion has many types but usually, high cohesion is good for software. 
+
+		---------------
+		| A   -->   B  |
+		---------------
+
+Coupling: 
+Coupling is also the indication of the relationships between modules. It is the concept of the Inter-module. The coupling has also many types but usually, the low coupling is good for software.
+
+		---------------
+		| A   -->   B  |   module 1
+		---------------
+			|
+		---------------
+		|      c       |   module 2
+		---------------

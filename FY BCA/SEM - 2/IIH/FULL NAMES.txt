@@ -1,0 +1,10 @@
+TCP: Transmission Control Protocol
+FTP: File Transfer Protocol
+ISDN: Integrated Services Digital Network
+RDF: Resource Description Framework
+ISP: Internet Service Provider
+DSL: Digital Subscriber Line
+ISDN: Integrated Services Digital Network
+UDP: User Datagram Protocol
+SSL: Secure Socket Layer
+ARPANET: Advanced Research Project Agency Network

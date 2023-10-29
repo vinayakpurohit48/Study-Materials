@@ -1,0 +1,8 @@
+Concepts of Two-Dimensional Numeric Array
+=====================
+		
+		- 2D array can be defined as an array of arrays
+		- 2D arrays are created to implement a relational database lookalike data structure
+		- A 2D array is also known as a matrix (a table of rows and columns form).
+		- It provides ease of holding the bulk of data
+		- 

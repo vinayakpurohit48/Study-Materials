@@ -1,0 +1,33 @@
+ROWID : 
+=========
+- ROWID is a pseudo column in a table which store and return row address in HEXADECIMAL
+  format with database tables.ROWID is the permanent unique identifiers for each row in the database
+- ROWID consists of 18 character string with the format. BBBBBBBBB.RRRR.FFFF Where B is Block,
+  R is Row, F is FIle
+- A user can access a row quickly and easily using its row ID.
+- ROWID can also be used to delete the duplicate records from a tame.
+- ROWID is representative of the allocation of physical memory.
+- Example : SELECT ROWID, last_name FROM employees WHERE department_id = 20;
+
+DUAL Table : 
+===========
+- automatically created by Oracle Database along with the data dictionary.
+- DUAL is in the schema of the user SYS but is accessible by the name DUAL to all users
+- has one column, DUMMY, defined to be VARCHAR2(1), and contains one row with a value X
+- It's used for selecting data from system functions and calculations when you don't need any data
+  from the databas
+- SYNTAX : select * from Dual;
+
+Functions : 
+===========
+1. DATE Functions : 
+	- SYSDATE
+	- SYSTIMESTAMP
+	- TO_CHAR
+	- TRUNC
+	- ROUND
+	- NEXT_DAY
+	- LAST_DAY
+	- MONTHS_BETWEEN
+	- ADD_MONTHS
+link : https://chat.openai.com/c/4347dc2e-bd56-47d8-8128-985308c116c2

@@ -1,0 +1,73 @@
+Web Page
+=====
+		- is a document available on world wide web				-  Collection of linked web pages on a web server is known as website
+
+Types of web pages
+==========
+		
+		- Static web page
+		- dynamic web page
+Static web page
+========
+
+		- known as flat or stationary web page
+		-  loaded on the client’s browser as exactly they are stored on the web server
+		- contain only static information
+		- can’t do any modification in information
+		- created using only HTM		
+		- only used when  information is no more required to be modified
+		- Eg. 
+
+Dynamic web page
+=========
+
+		- shows different information at different point of time
+		- it can change any portion of a web page without loading the entire web page
+		- made possible using Ajax technology
+		- Two types
+
+			- CLIENT-SIDEDYNAMIC WEB PAGE
+			- SERVER-SIDE DYNAMIC WEB PAGE
+
+CLIENT-SIDEDYNAMIC WEB PAGE
+================
+
+		- created using client side scripting
+			      -------------------
+			- change web page with action like mouse or a keybord
+			- generate client-side content
+			- generated on the user's computer only 
+			- if user download it 
+			- languages:-  JavaScript and Flash
+
+SERVER-SIDE DYNAMIC WEB PAGE
+==================
+
+		- craeted using server side scripting
+			- change when a web page is loaded
+			- languages such as PHP, ASP, ASP.NET, JSPallow
+
+Website
+====
+
+		- Web site is a collection of Web pages that belonging to a particular person or organization.
+		- identify by URL
+		- typically composed of four parts
+			Eg. http://www.amazone.com
+			1.http
+			2.www
+			3.amazone
+			4.com
+
+Purpose of Websites
+==========
+
+		- websites have different purposes
+			- eg. Information Websites
+			     Entertainment Website
+			     E-Commerce Websites 
+			     Service-Based Business Websites
+			     Social Media Websites
+
+Webserver
+=====

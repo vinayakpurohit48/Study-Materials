@@ -1,0 +1,64 @@
+SQL> create table book_master(
+  2  book_id number(3) primary key,
+  3  book_name varchar(15) not null,
+  4  author varchar(10) not null,
+  5  no_of_copies number(5) not null,
+  6  price number(4) not null);
+
+Table created.
+
+SQL> insert into book_master values(1,'ramayana','valmiki',50,1500);
+
+1 row created.
+
+SQL> insert into book_master values(2,'the_third_eye','gian_kumar',50,335);
+
+1 row created.
+
+SQL> insert into book_master values(3,'cobol','john_w',4,1000);
+
+1 row created.
+
+SQL> insert into book_master values(4,'gita','vyas',30,600);
+
+1 row created.
+
+SQL> insert into book_master values(5,'Dubliners','JamesJoyce',10,900);
+
+1 row created.
+
+SQL> select * from book_master order by author;
+
+   BOOK_ID BOOK_NAME       AUTHOR     NO_OF_COPIES      PRICE
+---------- --------------- ---------- ------------ ----------
+         5 Dubliners       JamesJoyce           10        900
+         2 the_third_eye   gian_kumar           50        335
+         3 cobol           john_w                4       1000
+         1 ramayana        valmiki              50       1500
+         4 gita            vyas                 30        600
+
+SQL> select book_name from book_master where price between 500 and 800;
+
+BOOK_NAME
+---------------
+gita
+
+SQL> select * from book_master where book_name like 'D%';
+
+   BOOK_ID BOOK_NAME       AUTHOR     NO_OF_COPIES      PRICE
+---------- --------------- ---------- ------------ ----------
+         5 Dubliners       JamesJoyce           10        900
+
+SQL> select book_name from book_master where price>700;
+
+BOOK_NAME
+---------------
+ramayana
+cobol
+Dubliners
+
+SQL> select book_name from book_master where no_of_copies<10;
+
+BOOK_NAME
+---------------
+cobol

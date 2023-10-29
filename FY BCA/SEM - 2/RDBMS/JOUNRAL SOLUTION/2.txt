@@ -1,0 +1,21 @@
+2) Write PL/SQL block that will accept employee number from user and deduct an amount of Rs.200 from the 
+inputted employee, if he has a salary less than 1000 after Salary is deducted, it display message‘s Salary is
+less than 1000’. The process is to be fired on table employee (emp_no, name, salary).
+-->
+SQL> create table employee
+  2  (
+  3  emp_no number(3) primary key,
+  4  name varchar(10) not null,
+  5  salary number(6) not null
+  6  );
+
+Table created.
+
+SQL> insert all
+  2  into employee values(101,'John',1200)
+  3  into employee values(102,'Alex',1100)
+  4  into employee values(103,'Steve',1400)
+  5  into employee values(104,'Bell',1100)
+  6  select * from dual;
+
+4 rows created.

@@ -1,0 +1,11 @@
+table to df:
+	df = pd.read_sql_query('SELECT * FROM STUDENT', db)
+
+df in ascending:
+	df.sort_values(by='column')
+
+df in decesending:
+	df.sort_values(by='column',ascending = False)
+df sort in both:
+	df.sort_values(by=['c1','c2'], ascending = [True, False], #inplace = True) #inplace use to save dataframe
+		

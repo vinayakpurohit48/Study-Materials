@@ -1,0 +1,13 @@
+sqlite> .open journal.db
+
+sqlite> create table STUDENT (
+(x1...> sno number primary key,
+(x1...> sname text(20) not null,
+(x1...> age number(3),
+(x1...> total_marks number);
+
+sqlite> INSERT INTO STUDENT VALUES (101, 'vishal', 25, 430);
+sqlite> INSERT INTO STUDENT VALUES (102, 'bhavesh', 26, 380);
+sqlite> INSERT INTO STUDENT VALUES (103, 'chirag', 24, 410);
+sqlite> INSERT INTO STUDENT VALUES (104, 'nehal', 30, 350);
+sqlite> INSERT INTO STUDENT VALUES (105, 'akshay', 21, 430);

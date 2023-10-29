@@ -1,0 +1,24 @@
+drop table student1;
+
+create table student1(rno number primary key,nm varchar(10),dob date,m1 number,m2 number,total number,per number(5,2));
+
+insert into student1(rno,nm,dob,m1,m2) values(1,'bob','23-feb-1991',90,95);
+insert into student1(rno,nm,dob,m1,m2) values(2,'peter','05-jan-1989',70,65);
+insert into student1(rno,nm,dob,m1,m2) values(3,'rehan','3-mar-2001',12,7);
+insert into student1(rno,nm,dob,m1,m2) values(4,'aryan','30-dec-1997',60,65);
+
+update student1 set total=m1+m2;
+update student1 set per=(total*100)/205;
+
+select * from student1;
+
+select trunc(per,1) from student1;
+
+select trunc(5.6178,2) from dual;
+
+select round(per,1) from student1;
+
+select round(5.6178,1) from dual;
+
+select to_date('13-jan-23','dd-mon-yy') from dual;
+

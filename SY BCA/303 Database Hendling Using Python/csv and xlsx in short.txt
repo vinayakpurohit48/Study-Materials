@@ -1,0 +1,14 @@
+f = open('myfile.csv')
+f = open(r'C:\Python33\Scripts\myfile.csv') #if address not same
+
+# Open a file for writing
+f = open('myfile.csv', 'w')
+
+# Open a file for reading and writing
+f = open('myfile.csv', 'r+')
+
+f.close() # close csv
+
+writer = csv.writer(f)
+ writer.writerow(['Bob', '25', 'Manager', 'Seattle'])
+

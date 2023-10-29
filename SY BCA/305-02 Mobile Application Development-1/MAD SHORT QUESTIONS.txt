@@ -1,0 +1,53 @@
+1. What is the difference between fixed and wireless networks? 
+-->
+Physical Connectivity: Fixed networks use cables, while wireless networks use wireless
+communication.
+
+Mobility: Fixed networks are stationary, while wireless networks allow device mobility.
+
+Installation and Maintenance: Fixed networks can be costly and require cable installation,
+while wireless networks are quicker to set up and require less physical maintenance.
+
+Speed and Bandwidth: Fixed networks often offer higher speeds and greater bandwidth, while
+wireless networks may have limitations.
+
+Interference and Security: Fixed networks are less susceptible to interference and often
+have simpler security measures, while wireless networks can face interference and require
+additional security precautions.
+
+2. Explain the concept of multiplexing in mobile computing. 
+-->
+Multiplexing in mobile computing is a technique that allows multiple signals or data streams
+to share a single communication channel. It optimizes bandwidth usage by combining, dividing,
+or time-sharing data from different sources.
+
+3. What is modulation, and how does it relate to wireless communication? 
+-->
+Modulation is the process of encoding digital data onto an analog carrier signal for
+transmission. In wireless communication, modulation varies the signal's characteristics
+(e.g., frequency or amplitude) to represent binary information.
+
+4. Define spectrum in the context of mobile communication. 
+-->
+Spectrum in mobile communication refers to the range of electromagnetic frequencies
+allocated for wireless communication. It's divided into bands, like the radio frequency
+spectrum, to accommodate different technologies (e.g., 4G, 5G).
+
+5. Briefly explain Bluetooth technology. 
+-->
+Bluetooth is a short-range wireless technology used for connecting devices (e.g.,
+smartphones, headphones) wirelessly. It facilitates data and audio transmission over
+short distances, typically up to 100 meters.
+
+6. What is Wireless Application Protocol (WAP), and what are its key components? 
+-->
+Wireless Application Protocol (WAP) is an outdated standard for accessing the internet
+on mobile devices. Its key components include the WAP gateway, WML (Wireless Markup
+Language), and WAP-enabled devices like mobile phones.
+
+7. What are Mobile Agents in mobile computing, and how do they work? 
+-->
+Mobile Agents in mobile computing are software entities that can autonomously migrate
+between networked devices to perform tasks or gather information. They work by traveling
+to different devices, executing tasks, and returning with results, reducing network load
+and latency.
