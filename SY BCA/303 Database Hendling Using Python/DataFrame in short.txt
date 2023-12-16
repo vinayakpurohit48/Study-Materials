@@ -8,4 +8,22 @@ df in decesending:
 	df.sort_values(by='column',ascending = False)
 df sort in both:
 	df.sort_values(by=['c1','c2'], ascending = [True, False], #inplace = True) #inplace use to save dataframe
+
+
+Extracting specific attributes and rows from dataframe: 
+============================================================
+
+Column(attribute) Selection:
+-----------------------------
+first = data['Hire_Date']\
+
+loc[]:
+
+df.set_index("Name", inplace = True)#use to set index
+
+iloc: 
+------
+
+
+
 		

@@ -1,0 +1,15 @@
+SQLite transaction statements:
+ 	- BEGIN TRANSACTION
+	- COMMIT;
+	- ROLLBACK;
+
+Data Filtering:
+	- Distinct(fetch unique records)
+	- where(to specify a condition)
+	- between, 
+	- IN
+	- NOT IN 
+	- LIKE
+	- Union, intersect, Except( returns distinct rows 
+from the left query that are not output by the right query)
+ 	- Limit, IS NULL
