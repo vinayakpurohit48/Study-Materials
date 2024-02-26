@@ -15,9 +15,8 @@ class test {
 	public static void main(String Args[]) {
 		StringOperation s1 = new StringOperation();
 		String str = "SDJ International College";
-		System.out.println("The Length is : " + s1.Findlength(str));
-		System.out.println("The Length is : " + s1.CharReplace(str,'e','E'));
-		System.out.println("The Length is : " + s1.toUpper(str));
-		System.out.println("In Upper Case : " + s1.toUpper(str));
+	System.out.println("The Length of " + str +" is : " + s1.Findlength(str));
+		System.out.println("After Replacing char : " + s1.CharReplace(str,'e','E'));
+		System.out.println(str +" in Upper character : " + s1.toUpper(str));
 	}
 }
