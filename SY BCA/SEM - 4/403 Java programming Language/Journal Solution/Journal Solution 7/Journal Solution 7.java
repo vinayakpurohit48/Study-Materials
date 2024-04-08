@@ -10,7 +10,7 @@ class StringOperation {
 	    return str.toUpperCase();
 	}
 }
-class test {
+class main {
 		
 	public static void main(String Args[]) {
 		StringOperation s1 = new StringOperation();

@@ -40,7 +40,7 @@ class Square implements calculateArea {
 	
 }
 
-class test {
+class main {
 	public static void main(String args[]) {
 		Rectangle rectArea = new Rectangle(5.1,7.2);
 		Triangle triArea = new Triangle(5.0,6.2);

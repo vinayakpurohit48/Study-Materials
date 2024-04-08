@@ -11,7 +11,7 @@ class Calc {
 		return side * side;
 	}
 }
-class test {
+class main {
 	public static void main(String Args[]) {
 		Calc c1 = new Calc();
 		System.out.println("Area of Circle : " + c1.area(7.2));

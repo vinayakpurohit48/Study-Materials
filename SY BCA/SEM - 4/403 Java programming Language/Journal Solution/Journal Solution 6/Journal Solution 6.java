@@ -16,7 +16,7 @@ class MyClass implements interface1,interface2 {
 	}
 }
 
-class test {
+class main {
 	public static void main(String Args[]) {
 		MyClass myClass = new MyClass();
 		

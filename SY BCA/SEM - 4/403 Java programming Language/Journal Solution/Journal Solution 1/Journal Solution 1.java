@@ -1,4 +1,4 @@
-class test {
+class main {
 	public static void main(String Args[]) {
 		int counterInt = 0;
 		int counterString = 0;
@@ -7,7 +7,7 @@ class test {
 	
 		for(int i=0; i<Args.length; i++) {
 		
-			System.out.println(Args[i]);
+			System.out.println(Args[i]+"\n");
 			try {
 				Integer.parseInt(Args[i]);
 				counterInt++;

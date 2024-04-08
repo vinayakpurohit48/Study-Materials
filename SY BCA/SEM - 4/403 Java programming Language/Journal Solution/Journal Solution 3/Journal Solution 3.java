@@ -14,11 +14,11 @@ class Student {
 	}
 }
 
-class test {
+class main {
 	
 	public static void main(String args[]) {
 		Student s1 = new Student();
-		s1.StoreData(772,"Vinayak");
+		s1.StoreData(872,"Vinayak");
 		s1.DisplayData();
 	}
 }
